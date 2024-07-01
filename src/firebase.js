@@ -3,13 +3,13 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  // Replace with your Firebase configuration
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCMRjNuMS6IZhIhsmzAG2LbXRMXf6UR-eI",
+  authDomain: "keyng-cart.firebaseapp.com",
+  projectId: "keyng-cart",
+  storageBucket: "keyng-cart.appspot.com",
+  messagingSenderId: "603615696618",
+  appId: "1:603615696618:web:9d7873054e88b2e241e993",
+  measurementId: "G-6383ZKYG7J"
 };
 
 const app = initializeApp(firebaseConfig);
