@@ -17,9 +17,9 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'referral', element: <Referral /> },
-      { path: 'tasks', element: <Tasks /> },
-      { path: 'boost', element: <Boost /> },
-      { path: 'stats', element: <Stats /> },
+      { path: '/components/tasks', element: <Tasks /> },
+      { path: '/components/boost', element: <Boost /> },
+      { path: '/components/stats', element: <Stats /> },
     ],
   },
 ]);
