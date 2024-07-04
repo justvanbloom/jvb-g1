@@ -82,12 +82,14 @@ function Home() {
       </motion.button>
       {isMining && (
         <motion.div
-          className="mt-4"
+          className="mt-4 circle-outer"
           initial={{ scale: 0 }}
           animate={{ scale: [1, 1.1, 1] }}
           transition={{ repeat: Infinity, duration: 1 }}
         >
-          <FaCoins size={40} color="#FFD700" />
+          <div className="circle-inner">
+            <FaCoins size={40} color="#FFD700" className="dot" />
+          </div>
         </motion.div>
       )}
       {message && (
@@ -105,7 +107,7 @@ function Home() {
         <p>Coins needed: {user.level * 100 - user.coins}</p>
         <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
           <div 
-            className="bg-blue-600 h-2.5 rounded-full" 
+            className="progress-gradient h-2.5 rounded-full" 
             style={{ width: `${(user.coins / (user.level * 100)) * 100}%` }}
           ></div>
         </div>
